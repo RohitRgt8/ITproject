@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <title>
+            Christopher Nolan
+        </title>
+        <link rel = "icon" href = "logo.jpg" 
+        type = "image/x-icon">
+          
+        <style>
+.tab {
+  overflow: hidden;
+  color:slategray;
+  background-color:none;
+  margin-left:70px;
+  margin-top:-54px;
+  font-weight: bold;
+}
+
+.tab button {
+  background-color: inherit;
+  float: right;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+  font-weight: bold;
+  opacity: 1;
+  margin-right: 10px;
+}
+
+.tab button:hover {
+  background-color:darkgrey;
+}
+
+.tab button.active {
+  background-color:darkgrey;
+}
+
+.tabcontent {
+  display: none;
+  padding:10px;
+  align-items: center;
+  color: white;
+  margin-top: 170px;
+}
+.tablinks{
+    color:white;
+}
+.imagep {
+    margin-top:10px;
+    margin-left: 10px;
+    height:50px;
+    width:60px;
+}
+.header {
+    
+}
+.bg{
+    background-image: url('bg1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:700px;
+    width:1350px;
+}
+.heading{
+    font-weight: bolder;
+    font-size: 40px;
+    text-align: center;
+    font-style: italic;
+}
+.text1{
+    font-size:30px;
+    text-align: center;
+    font-weight: bold;
+}
+.heading2{
+    font-size:50px;
+    font-weight: bold;
+    text-align: center;
+    color:white;
+}
+.text2{
+    font-size:20px;
+    text-align: center;
+    padding:80px;
+}
+.imagep1{
+    border:3px black;
+    border-style: double;
+    padding:10px;
+    height:500px;
+    width:300px;
+    margin-left: 50px;
+}
+.bar2 {
+  display: flex;
+  flex-direction: column;
+  margin-left: 100px;
+  padding:-10px;
+  width:500px;
+}
+.bio {
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+.am {
+  display: flex;
+  flex-direction: row;
+  margin-top:-150px;
+}
+h1{
+    text-align: center;
+    color:white;
+    font-style: italic;
+}
+h2{
+    text-align: center;
+    color:white;
+}
+.imgcon{
+    direction:flex;
+    flex-direction: column;
+    margin-top: -50px;
+}
+.row1{
+    direction:flex;
+    flex-direction: row;
+    margin-left: 190px;
+}
+.row2{
+    direction:flex;
+    flex-direction: row;
+    margin-left:190px;
+}
+.i1{
+    height: 220px;
+    width:250px;
+    padding:30px;
+}
+.videop{
+    width:600px; 
+    height:500px;
+    margin-left: 50px;
+}
+.t{
+    font-size: 20px;
+    font-style: italic;
+    text-align: center;
+    margin-left:650px;
+    width:500px;
+}
+.gal
+{
+    margin-top: -170px;
+}
+
+        </style>
+            
+    </head>
+    <body>
+        <div class="bg">
+        <div class="header">
+            <image src="logo.jpg" class="imagep" alt="nolan logo"/>
+            <div class="tab">
+                
+                <button class="tablinks" onclick="openCity(event, 'Gallery')">Gallery</button>
+                <button class="tablinks" onclick="openCity(event, 'About')">About</button>
+                <button class="tablinks" onclick="openCity(event, 'Home')" id = "h">Home</button>
+            </div>
+        </div>
+
+        <div id="Home" class="tabcontent">
+            <h3 class="heading">
+            CHRISTOPHER EDWARD NOLAN</h3>
+            <p class="t">
+                "Either you die a hero or live long enough to see yourself become a villain."
+            </p>
+        </div>
+
+        <div id="About" class="tabcontent">
+            <div class="am">
+                <video class="videop" controls>
+                    <source src="aboutvideo.mp4" type="video/mp4">
+                    
+                    Your browser does not support HTML video.
+                </video>
+                <div class="bar2">
+                <h1>Christopher Edward Nolan</h1>
+                <p class="bio">
+                    Christopher Edward Nolan CBE is a British-American film director, producer, and screenwriter. 
+                </p>
+                <p class="bio">
+                    His directorial efforts have grossed more than US$5 billion worldwide, garnered 36 Oscar nominations and ten wins. 
+                </p>
+                <p class="bio">
+                    Born and raised in London, Nolan developed an interest in filmmaking from a young age. 
+                </p>
+                <p class="bio">
+                    Over the course of 15 years of filmmaking, Nolan has gone from low-budget independent films to working on some of the biggest blockbusters ever made.
+                </p>
+            </div>
+        </div>
+        </div>
+
+        <div id="Gallery" class="tabcontent">
+            <div class="gal"><h2>Major Works</h2>
+            <p></p>
+            <div classs="imgcon">
+                <div class="row1">
+                    <image src="Film1.jfif" class="i1" alt="work1"/>
+                    <image src="Film2.jpg" class="i1" alt="work2"/>
+                    <image src="Film3.jpg" class="i1" alt="work3"/>
+                </div>
+                <div class="row2">
+                    <image src="Film4.jpg" class="i1" alt="work4"/>
+                    <image src="Film5.jpg" class="i1" alt="work5"/>
+                    <image src="Film6.jpg" class="i1" alt="work6"/>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+        <script>
+            var w = window.innerWidth;
+            var h = window.innerHeight;
+            function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+            }
+            document.getElementById("h").click();
+        </script>
+        
+    </body>
+</html>
